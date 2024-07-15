@@ -68,7 +68,7 @@ nav h3{
 }
 nav li{
     list-style: none;
-    margin-right: 30px;
+    margin-left: 40px;
 }
 nav a{
     text-decoration: none;
@@ -131,6 +131,48 @@ main{
 .features p{
     margin: 32px 0;
 }
+/* Some facts */
+.facts-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.card{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 220px;
+    height: 220px;
+    padding: 36px;
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card h3{
+    color: rgb(66, 66, 66);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 53px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card h4{
+    color: rgb(114, 114, 114);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+}
+.some-facts p{
+    max-width: 540px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 
 /* Responsiv media query */
 
@@ -138,12 +180,14 @@ main{
     header .display, .teams{
         flex-direction: column;
     }
-    .feature-img{
+    .feature-img, .facts-cont{
         grid-template-columns: repeat(1, 1fr);
     }
 .features{
     margin-top: 20px;
 }
+
+
 }
 /* medium device */
 @media screen and (min-width: 576px) and  (max-width: 992px){
@@ -155,5 +199,8 @@ main{
     }
     .features{
         margin-top: 20px;
+    }
+    .facts-cont{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
