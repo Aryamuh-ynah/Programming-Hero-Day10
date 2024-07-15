@@ -144,9 +144,10 @@ main{
 
 .cards{
     width: 550px;
-    height: 131px;
+    height: 125px;
     margin-top: 20px;
-    padding: 30px;
+    margin-right: 120px;
+    padding: 40px 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     align-items: center;
@@ -160,22 +161,33 @@ main{
 .cards p{
     margin-top: 10px;
 }
-.img{
-    width: 800px;
-    height: 1059px;
+.p{
+    max-width: 586px;
 }
+
+
 .img img{
-    max-width: 708px;
-    height: 982px;
-    border-radius: 8px;
-    padding-left: 92px;
-    padding-bottom: 77px;
+    width: 100%;
 }
 #experience{
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    padding: 45px, 42px;
+    font-size:1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin-left: -100px;
+    margin-top: -500px;
+    margin-bottom: 200px;
 
 }
 #ten-year{
-    
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* Some facts */
@@ -187,9 +199,9 @@ main{
 .card{
     border: 1px solid #FF900E;
     border-radius: 8px;
-    width: 220px;
-    height: 220px;
-    padding: 36px;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
     margin: 50px;
     text-align: center;
     display: flex;
@@ -236,10 +248,31 @@ main{
 .sponsor-img img{
     filter: grayscale(100%);
 }
+/* Footer */
+footer{
+    /* Rectangle 11 */
+    max-width: 1450px;
+    height: 100px;
+    left: 240px;
+    border-radius: 8px;
+    background-color: rgb(255, 244, 231);
+    margin: 110px auto;
+    justify-content: center;
+    align-items: center;
+    }
+footer p{
+    
+    color: rgb(66, 66, 66);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+
+}
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
-    header .display, .teams{
+    header .display, .teams, .more{
         flex-direction: column;
     }
     .feature-img,
@@ -251,18 +284,25 @@ main{
     .sponsor-img{
         gap: 20px;
     }
-.features{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-.more{
-    flex-direction: column;
-}
+    .features{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #experience{
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    .more-features{
+        margin: 10px 30px;
+    }
+    .cards{
+        width: 300px;
+    }
 
 }
 /* medium device */
 @media screen and (min-width: 576px) and  (max-width: 992px){
-    .teams{
+    .teams, .more{
         flex-direction: column;       
     }
     .features{
@@ -274,5 +314,12 @@ main{
     .sponsor-img{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+    .more-features{
+        margin: 50px auto;
+    }
+    #experience,.some-facts{
+        margin-left: 30px;
+        margin-bottom: 20px;
     }
 }
