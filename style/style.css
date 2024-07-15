@@ -131,6 +131,53 @@ main{
 .features p{
     margin: 32px 0;
 }
+/* More features */
+#feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+
+.cards{
+    width: 550px;
+    height: 131px;
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    align-items: center;
+}
+.cards h4{
+    color: rgb(19, 19, 19);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 23px;
+}
+.cards p{
+    margin-top: 10px;
+}
+.img{
+    width: 800px;
+    height: 1059px;
+}
+.img img{
+    max-width: 708px;
+    height: 982px;
+    border-radius: 8px;
+    padding-left: 92px;
+    padding-bottom: 77px;
+}
+#experience{
+
+}
+#ten-year{
+    
+}
+
 /* Some facts */
 .facts-cont{
     display: grid;
@@ -208,7 +255,9 @@ main{
     margin-top: 20px;
     margin-left: 20px;
 }
-
+.more{
+    flex-direction: column;
+}
 
 }
 /* medium device */
