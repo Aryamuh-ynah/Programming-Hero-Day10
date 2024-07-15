@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* shared */
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.display{
+    display: flex;
+}
+.btn{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    width: 180px;
+    height: 64px;
+    border: none;
+}
+
+/* header */
+nav, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* nav */
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* banner */
+.banner-cont{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner h2{
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+    margin: 32px 0;
+}
+.banner p{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+    }
+.banner img{
+    border-radius: 8px;
+    max-width: 1440px;
+    max-height: 700px;
+}
